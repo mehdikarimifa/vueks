@@ -1,0 +1,27 @@
+{
+  "name": "@immld/vueks",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "module": "dist/library.mjs",
+  "files": [
+    "dist/*"
+  ],
+  "repository": "https://github.com/immld/vueks.git",
+  "author": "Mehdi Karimi <mehdikarimifa@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^3.2.21"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.2.37",
+    "rollup": "^2.78.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-vue": "^6.0.0"
+  }
+}
